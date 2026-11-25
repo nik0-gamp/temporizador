@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(32, 32, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 450px;
+    background: #212b47;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+#tipoSesion {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #a6adce;
+}
+
+.temporizador {
+    margin: 20px 0;
+}
+
+#tiempo {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #65658d;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4F46E5;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #A5B4FC;
+    outline-offset: 3px;
+}
+
+.sesiones {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.configuracion {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.configuracion h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.configuracion label {
+    display: block;
+    margin: 12px 0 7px;
+}
+
+.configuracion input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #252A45;
+    color: white;
+    font-size: 16px;
+}
+
+#mensaje {
+    margin-top: 25px;
+    color: #A5B4FC;
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 25px 18px;
+    }
+
+    #tiempo {
+        font-size: 58px;
+    }
+
+    button {
+        flex: 1;
+    }
+}
